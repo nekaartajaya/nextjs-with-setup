@@ -1,0 +1,6 @@
+.github
+.next/
+docs/
+node_modules/
+.env
+.env.example
