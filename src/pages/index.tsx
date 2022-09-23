@@ -1,8 +1,15 @@
+import {getData} from '@api/exampleGet';
+import api from '@api/index';
 import Head from 'next/head';
 import Image from 'next/image';
+import {useEffect} from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
